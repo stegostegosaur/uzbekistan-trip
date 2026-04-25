@@ -250,8 +250,10 @@ def calendar_html(year: int, month: int, clickable_days: set[int], selected_day:
 
         class_attr = " ".join(classes)
         if is_clickable:
+            # Streamlit sets a page-wide base target that opens links in a new tab.
+            # Force same-tab navigation for intra-app day selection.
             day_cells.append(
-                f'<a class="{class_attr}" href="?day={d}" role="button" aria-label="Select day {d}">{d}</a>'
+                f'<a class="{class_attr}" href="?day={d}" target="_self" role="button" aria-label="Select day {d}">{d}</a>'
             )
         else:
             day_cells.append(f'<span class="{class_attr}">{d}</span>')
