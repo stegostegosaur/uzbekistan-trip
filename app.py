@@ -106,7 +106,7 @@ def build_itinerary() -> dict[int, DayPlan]:
             notes="Keep passport handy for train checks; arrive early to the station.",
         ),
         3: DayPlan(
-            title="Arrive Urgench → Nukus (night transfer)",
+            title="Urgench → Nukus",
             city="Urgench / Nukus",
             weather=(
                 "Khorezm + Karakalpakstan in May can be sunny and dry; "
@@ -115,8 +115,8 @@ def build_itinerary() -> dict[int, DayPlan]:
             schedule=[
                 "10:57 — Arrive in Urgench",
                 "Urgench feels quiet; keep it brief (rest + lunch)",
-                "Plan car transfer to Nukus at night (≈ 3 hours)",
-                "Check-in: NUKUS GUEST HOUSE (late arrival)",
+                "Plan car transfer to Nukus during the day (≈ 3 hours)",
+                "Check-in: NUKUS GUEST HOUSE (possibly late arrival)",
             ],
             accommodation="NUKUS GUEST HOUSE in Nukus",
             accommodation_links=[
